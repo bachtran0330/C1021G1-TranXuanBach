@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>namnhuan</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt("enter year"));
+    let isleapyear = false;
+    if (year %4 ==0){
+        if (year %100==0){
+            if (year %400==0){
+                isleapyear = true;
+            }
+        }else {
+            isleapyear = true;
+        }
+    }
+    if (isleapyear){
+        alert(year + "nam nhuan");
+    }else {
+        alert(year + " ko phai nam nhuan");
+    }
+</script>
+</body>
+</html>
