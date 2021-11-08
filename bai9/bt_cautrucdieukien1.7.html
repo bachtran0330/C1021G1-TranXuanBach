@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("thoi luong cuoc goi tinh theo phut"));
+    let b = a*600 + 25000
+    let c = 50*600 + (a-50)*400 + 25000
+    let d = 50*600 + 100*400 + (a-150)*200 + 25000
+    if (a <= 50 ){
+        alert("so tien phai dong thang nay la:" + b);
+    }else if (a <= 150){
+        alert(" so tien phai dong thang nay la :" + c);
+    }else {
+        alert( " so tien phai dong thang nay la :" + d);
+    }
+
+</script>
+</body>
+</html>

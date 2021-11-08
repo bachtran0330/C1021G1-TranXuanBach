@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt(" so tien ban duoc"));
+    let b = a*0.25
+    let c = a*0.15
+    let d = a*0.07
+    if ( a >= 1000){
+        alert(" nhan duoc hoa hong 25% , so tien nhan duoc :" + b);
+    } else if ( a <= 800){
+        alert( " nhan duoc hoa hong la 15% , so tien nhan duoc :"+ c );
+    } else if ( a <= 500){
+        alert(" nhan duoc hoa hong 7%, so tien nhan duoc la :"+ d );
+    } else {
+        alert(" ko duoc hoa hong");
+    }
+</script>
+</body>
+</html>
