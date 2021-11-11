@@ -12,12 +12,16 @@
     let c = parseInt(prompt("nhap c"));
     let d = b*b - 4*a*c
     let x = - b/2/a
-    let z = -(b+
+    let z = (-b - Math.sqrt(d))/2;
+    let v = (-b + Math.sqrt(d))/2;
     if (d < 0){
         alert("phuong trinh vo nghiem");
     }else if ( d == 0){
-        a
+        alert(" phuong trinh co nghiem kep la :" + x );
+    }else {
+        alert(" phuong trinh co 2 nghiem la ;" + z + "nghiem thu 2 la :"+ v)
     }
+
 </script>
 </body>
 </html>
