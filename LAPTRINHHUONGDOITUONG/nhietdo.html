@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(C) {
+            this.C = C;
+        };
+        getF(){
+            return "F =" +(this.C*9/5 + 32) ;
+        }
+        getK(){
+            return "k =" + (this.C + 273.15) ;
+        }
+    }
+    let C = Number(prompt("nhapC"));
+    let Temperature  o = new Temperature(C);
+    alert(Temperature.getF)
+</script>
+</body>
+</html>

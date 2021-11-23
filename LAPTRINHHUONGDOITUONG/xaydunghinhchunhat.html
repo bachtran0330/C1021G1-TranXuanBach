@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas height="200" width="600" style="border: 1px solid"></canvas>
+<script>
+    class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        getArea() {
+            return "area = " + this.height * this.width
+        }
+
+        getCircumference() {
+            return "Circumference =" + (this.width + this.height) * 2
+        }
+    }
+    let height = parseInt(prompt("nhapchieudai"));
+    let width = parseInt(prompt("nhapchieurong"));
+    let Rectangle = new Rectangle(height,width)
+    alert(rectangle.Area());
+    alert(rectangle.Circumference());
+</script>
+</body>
+</html>
