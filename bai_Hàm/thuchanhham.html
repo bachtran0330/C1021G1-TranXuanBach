@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function dongYChoiGame(answer) {
+        let result ;
+        if(answer){
+            result = "Chúng mình cùng chơi nào!"
+        } else {
+            result = "Vậy thì hẹn bạn hôm khác nhé!"
+        }
+        return result
+    }
+
+    let ask = confirm("Bạn có muốn chơi game không??")
+    let theAnswer = dongYChoiGame(ask)
+
+    alert(theAnswer)
+</script>
+</body>
+</html>

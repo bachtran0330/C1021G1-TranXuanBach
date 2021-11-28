@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<div>
+    <input type="text" id="productName" placeholder="New Product">
+    <button type="button" onclick="addProduct()">Add</button>
+</div>
+<h3>Display Product</h3>
+<table id="result" border="1px solid"></table>
+
+<script>
+    let product = []
+    function dataProduct() {
+        let tableproductHTML = `
+                 <tr>
+                 <th>Product name</th>
+                 <th colspan="2">Action</th>
+                 </tr>`;
+
+        for(let i=0;i<product.length;i++){
+            tableproductHTML += `
+                  <tr>
+                    <td>${product[i]}</td>
+                    <td><button type="button">Edit</button></td>
+                    <td><button type="button">Delete</button></td>
+                  </tr>`
+        }
+        document.getElementById("result").innerHTML = tableproductHTML;
+    }
+    dataProduct()
+    function addProduct() {
+        let name = document.getElementById("productName").value
+        product.push(name)
+        dataProduct()
+
+    }
+</script>
+</body>
+</html>

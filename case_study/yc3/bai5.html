@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu = " Mời bạn chọn đồ uống \n"+
+            "1.cafe \n"+
+            "2.nước cam \n" +
+            "3.nước lọc \n" +
+            "4.nước mía \n" +
+            "5.bia \n" +
+            "6.trà đá \n" +
+            "7. kết thúc menu ";
+    let choose
+    let total = 0
+    do {
+        choose = parseInt(prompt(menu));
+        let amount = 0 ;
+        let price = 0 ;
+        switch (choose) {
+            case 1 :
+                price = 10000;
+                break;
+            case 2 :
+                price = 25000;
+                break;
+            case 3:
+                price = 1000;
+                break;
+            case 4 :
+                price = 12000;
+                break;
+            case 5:
+                price = 15000;
+                break;
+            case 6 :
+                price = 13000;
+                break;
+            case 7:
+                continue ;
+        }
+        amount = parseInt(prompt("nhập đồ uống"));
+        total += amount*price;
+    }while (choose !== 7)
+alert("giá tiền phải trả là " + total);
+</script>
+</body>
+</html>

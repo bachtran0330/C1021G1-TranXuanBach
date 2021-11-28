@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>Chuyển đổi nhiệt độ</h2>
+<p><strong>Chuyển đổi từ độ F(Fahrenheit) sang độ C(Celcius)</strong></p>
+<p>Fahrenheit <input type="number" placeholder="Fahrenheit"
+                     oninput="fahToCel(this.value)"
+                     onchange="fahToCel(this.value)"></p>
+<p>Celcius : <span id="out"></span></p>
+
+<script>
+    function fahToCel(F) {
+        let C
+        C = (F - 32)/1.8
+        document.getElementById("out").innerHTML = C + " (C)"
+    }
+</script>
 </body>
 </html>
